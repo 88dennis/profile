@@ -1,0 +1,41 @@
+.toggle_button {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* the flex-direction column makes the div pile up on top of each other */
+    /* the space between makes some spaces between divs */
+    height: 15px;
+    width: 30px;
+    background: transparent;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    border-left: solid 1px transparent;
+    border-right: solid 1px transparent;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 20px;
+    /* box sizing to make sure the lines stay inside the button */
+}
+
+.toggle_button:focus {
+    outline: none;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    /* box-shadow: 0px 0px 3px 3px rgb(57, 105, 156); */
+    /* border-radius: 5px; */
+}
+
+.toggle_button_line {
+    width: 30px;
+    height: 1px;
+    background: white;
+    /* added */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* .toggle_button:focus {
+ 
+} */

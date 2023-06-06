@@ -1,0 +1,143 @@
+.snap_wrapper {
+    width:100%;
+    min-height:100vh;
+    margin-top: 60px;;
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
+}
+
+
+.snap_content {
+    width: 100%;
+    /* width:100vh; */
+
+    min-width:150px;
+    /* background: white; */
+
+}
+/* 
+.sectionClass {
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    scroll-snap-align:start;
+    padding-bottom:30px;
+    padding-top:30px;
+
+} */
+
+
+.sectionClass {
+    /* width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    scroll-snap-align:start; */
+    padding-bottom:30px;
+    padding-top:30px;
+
+} 
+
+.sectionClass.snap_one {
+    background-color: rgb(219, 239, 241);
+    color:#222
+}
+
+.sectionClass.snap_two {
+    background-color: rgb(199, 229, 233);
+
+    color:#222;
+
+}
+
+
+.sectionClass.snap_three {
+    background-color: rgb(219, 239, 241);
+    color:#222;
+
+
+}
+
+.section_buttons_wrap {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    background-color: rgb(219, 239, 241);
+
+    padding-top:20px;
+    padding-bottom:20px;
+
+
+}
+
+.modalButtons,
+.iconsimg,
+.buttonLinksbtn,
+.appLinkBtn
+{
+z-index:400;
+}
+
+.sectionButtons {
+    background-color: rgb(183, 227, 233);
+    border-radius:4px;
+    border-style: none;
+    font-size:.9rem;
+    padding:5px;
+    outline:none;
+    margin:10px;
+    color:rgb(2, 116, 141);;
+    }
+    
+    .sectionButtons:hover,
+    .sectionButtons:active,
+    .sectionButtons:focus
+    
+     {
+        background-color: rgb(0, 147, 180);
+        color:white;
+        }
+
+
+        .back_to_top_btn_section {
+            /* background-color: rgb(183, 227, 233); */
+            background-color: rgb(0, 147, 180);
+    border-radius:50px;
+    border-style: none;
+    font-size:.8rem;
+    padding:10px;
+    outline:none;
+    margin:10px;
+    color:white;
+        }
+
+
+    .back_to_top_btn_section:hover,
+    .back_to_top_btn_section:active,
+    .back_to_top_btn_section:focus {
+        background-color: rgb(0, 147, 180);
+        color:white;
+    }
+
+    .back_to_top_btn_wrap {
+        display: flex;
+        justify-content: flex-end;
+        margin-right:5px;
+    }
+
+
+
+
+@media (max-width: 768px) {
+   .back_to_top_btn_section{
+    font-size:.6rem;
+    padding:7px;
+   }
+    
+    }
+
+
+        

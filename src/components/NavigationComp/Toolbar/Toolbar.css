@@ -1,0 +1,176 @@
+.toolbar {
+    width: 100%;
+    position: fixed;
+    /* background: rgba(0, 0, 0, 0.75); */
+    /* background-color: rgb(38, 63, 82); */
+    background-color: rgb(0, 147, 180);
+
+    /* background-color: rgb(56, 104, 139); */
+    /* background-color: rgb(26, 102, 156); */
+    /* background-color: rgb(58, 102, 156); */
+    /* background-color: rgb(66, 133, 244); */
+    height: 60px;
+    z-index: 99;
+}
+
+.toolbar_navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width:100%;
+    justify-content:space-between;
+}
+
+
+.toolbar_navigation2 {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.toolbar_logo {
+    margin-left: 0rem;
+    height: 50px;
+    /* width: 100px; */
+    border-style: none;
+    background-color: transparent;
+    /* color: white; */
+    font-size: 15px;
+    z-index: 99;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.toolbar_logo a {
+    /* color: white; */
+    color: #e2e2e2;
+    text-decoration: none;
+    font-size: 1.25rem;
+    outline: none;
+}
+
+
+/* this will take all the space in between */
+
+.spacer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.mainToolBarSpanName {
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    text-decoration:underline;
+}
+
+
+.toolBarSpanName {
+    /* color: white; */
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    /* color: #e92f2f; */
+}
+
+.toolbar_navigation_items a {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    color: rgb(243, 237, 237);
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.toolbar_navigation_items ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+}
+
+.modalButton {
+    color: #f2f2f2;
+}
+
+
+.modalButton {
+    height: 50px;
+    width: 100px;
+    border-style: none;
+    background-color: transparent;
+    color: #f2f2f2;
+    font-size: 15px;
+    z-index: 99;
+    outline: none;
+}
+
+.modalButton:hover,
+.modalButton:focus {
+    background-color: rgb(54, 113, 241);
+    color: white;
+    font-size: 15px;
+}
+
+.toolbar_btns {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar_navigation_items li {
+    padding: 0 0.5rem;
+}
+
+.toolbar_navigation_items a:hover,
+.toolbar_navigation_items a:active,
+.toolbar_navigation_items a:focus
+ {
+    color: white;
+    /* font-size: 1.1rem; */
+    /* text-decoration: underline; */
+
+}
+
+.toolbar_navigation_icons {
+    display: none;
+    align-items: center;
+    height: 50px;
+    
+
+}
+.toobar_icon {
+    color: white;
+    padding-left:8px;
+}
+
+/* not to show some items in nav bar */
+
+@media (max-width: 768px) {
+    .toolbar_navigation_items {
+        display: none;
+    }
+    .toolbar_btns {
+        display: none;
+    }
+
+    .toolbar_navigation_icons {
+        display: flex;
+    }
+    .toolbar_btn_icons {
+        display: flex;
+    }
+
+    .mainToolBarSpanName {
+        display: none;
+
+    }
+
+    .spacer {
+        flex:2;
+    }
+    /* .toolBarSpanName {
+        display: none;
+    } */
+}

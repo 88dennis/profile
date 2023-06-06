@@ -1,0 +1,85 @@
+import React, { useEffect, useContext, useState } from "react";
+
+import "./Toolbar.css";
+import DrawerToggle from "../SideDrawer/DrawerToggle";
+
+let isMounted = false;
+
+const toolbarComp = (props) => {
+
+  const [scrolling, setScrolling] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+  const [mount, setMount] = useState(false);
+
+  const styleVisible = {
+    top: "0",
+    transition: "all .3s ease",
+  };
+
+  const styleNotVisible = {
+    top: "-120px",
+    transition: "all .3s ease",
+  };
+
+
+  useEffect(() => {
+    function onScroll(e){
+      setScrollTop(e.target.documentElement.scrollTop);
+      // setScroll(window.pageYOffset);
+      setScrolling(e.target.documentElement.scrollTop > scrollTop);
+    };
+    window.addEventListener("scroll", onScroll);
+    isMounted = true;
+    if (!mount) {
+      setMount(!mount);
+      if (isMounted) {
+      }
+    }
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      isMounted = false;
+    };
+
+  }, [scrollTop, mount]);
+
+console.log(scrollTop)
+
+console.log(scrolling)
+
+function isScrolling(){
+  if (scrolling && scrollTop > 30) {
+    // setShowNav(false);
+    return true;
+  } else {
+    // setShowNav(true);
+    return false;
+  }
+};
+
+
+  return (
+    <header className="toolbar">
+      <nav className="toolbar_navigation">
+        <div className="toolbar_logo">
+          {/* <div className="toolbar_btns">{props.children}</div> */}
+
+          <div>{props.toolBarLeftIcon} </div>
+        </div>
+        <div className="mainToolBarSpanName"> {props.nameOfPage}</div>
+     
+        <div className="toolbar_navigation_items">
+              {props.children}
+        </div>
+
+        <div className="spacer"></div>
+
+        <div>
+          <DrawerToggle click={props.toggleDrawer}></DrawerToggle>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default toolbarComp;

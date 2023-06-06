@@ -1,0 +1,135 @@
+.buttonLinksWrap {
+    justify-content: center;
+    display: flex;
+    z-index: 0;
+}
+.buttonLinksCont {
+    width: 90%;
+    max-width: 90%;
+    /* background: rgb(245, 245, 245); */
+    background: transparent;
+    /* box-shadow: 0 2px 8px rgba(0,0,0, .26); */
+    overflow: auto;
+    padding: 0;
+
+}
+
+.buttonLinksHeader {
+    padding: 1.5rem;
+    background: darkgray;
+    color:white;
+}
+
+.resumebtn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 5px;
+    background-color: rgb(238, 75, 75);
+    color: white;
+    border-style: none;
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-decoration: underline;
+
+}
+
+.resumebtn > a {
+    color: white;
+
+}
+
+.resumebtn:focus {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    outline:none;
+}
+
+.buttonLinksbtn:focus {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    outline:none;
+}
+
+
+a:focus {
+    outline:none;
+}
+
+.iconsimg {
+    height:40px;
+    width:40px;
+   
+}
+
+.buttonLinksHeader h1 {
+    margin: 0;
+}
+
+
+.buttonLinksContent {
+    padding: 1.5rem;
+    display: flex;
+justify-content: center;
+}
+
+.profileButtons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.buttonLinksbtn {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border-style: none;
+    margin: 5px;
+    
+}
+
+.buttonLinksbtn > a:focus   {
+    outline: none;
+}
+/* 
+ .buttonLinksbtn:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+    cursor: pointer;
+  }
+
+  .resumebtn:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+    cursor: pointer;
+  } */
+
+  /* .resumebtn:active {
+    -ms-transform: scale(.99);
+    -webkit-transform: scale(.99);
+    transform: scale(.99); 
+    cursor: pointer;
+  } */
+
+  .resumebtn:focus {
+    /* -ms-transform: scale(.99);
+    -webkit-transform: scale(.99);
+    transform: scale(.99); 
+    cursor: pointer; */
+    outline:none;
+    color: rgb(113, 113, 160);
+  }
+
+@media (min-width: 768px) {
+    .buttonLinksCont {
+        width: 40rem;
+        left: calc((100% - 40rem)/ 2);
+    }
+
+
+}
