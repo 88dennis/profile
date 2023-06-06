@@ -1,3 +1,8 @@
+
+https://88dennis.github.io/profile/
+
+============================
+
 GIT
 Inside your local project folder
 git init
@@ -100,3 +105,14 @@ EDIT THE PACKAGE JSON
     "gh-pages": "^5.0.0"
   }
 }
+
+
+THEN TYPE "npm run deploy"
+
+
+===============
+How to deploy react to github pages
+https://youtu.be/Q9n2mLqXFpU
+
+===============
+
