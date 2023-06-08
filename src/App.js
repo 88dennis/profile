@@ -19,7 +19,8 @@ function App() {
   return (
     <div className="App">
      <GlobalContextProvider>
-      <Router basename={process.env.PUBLIC_URL}>
+      {/* <Router basename={process.env.PUBLIC_URL}> */}
+      <Router basename={"/profile"}> 
         <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/home" component={HomePage} />
