@@ -15,7 +15,7 @@ const ContactContentComp = ({ handlePageChange }) => {
             <Accordion title="Name" content="Dennis Sarmiento" />
             <Accordion
               title="Email"
-              content="<a href='mailto:dmsarmiento80@gmail.com'>dmsarmiento80@gmail.com</a>"
+              content="<a href='mailto:dennissarmiento8080@gmail.com'>dennissarmiento8080@gmail.com</a>"
             />
             <Accordion
               title="Phone"
@@ -26,7 +26,7 @@ const ContactContentComp = ({ handlePageChange }) => {
               // </br>
               // <p>Lorem ipsum dlor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               // "
-              content="(206)-880-9228"
+              content="(808)-666-1637"
             />
           </div>
         </div>
