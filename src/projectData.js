@@ -80,35 +80,35 @@ projects:[
     projectInfo: "Responsive web page template using styled-components, react-scroll",
     projectLink: "https://88dennis.github.io/mopay-appdms/",
   },
-  {
-    _id: 70,
-    name: "Bucklet App",
-    image: "https://i.imgur.com/fRK2ooL.jpg",
-    gitimage: "https://i.imgur.com/5uRJvFm.png",
-    gitHubLink: "https://github.com/88dennis/sarmsdev-mern-bucklet",
-    projectInfo: "Keeps track of your income and expenses. A CRUD app that uses MERN Stack",
-    projectLink: "https://buckletapp.herokuapp.com/"
+  // {
+  //   _id: 70,
+  //   name: "Bucklet App",
+  //   image: "https://i.imgur.com/fRK2ooL.jpg",
+  //   gitimage: "https://i.imgur.com/5uRJvFm.png",
+  //   gitHubLink: "https://github.com/88dennis/sarmsdev-mern-bucklet",
+  //   projectInfo: "Keeps track of your income and expenses. A CRUD app that uses MERN Stack",
+  //   projectLink: "https://buckletapp.herokuapp.com/"
     
-  },
-  {
-    _id: 80,
-    name: "Staff Info Tracker",
-    image: "https://i.imgur.com/KFpCAN7.jpg",
-    gitimage: "https://i.imgur.com/5uRJvFm.png",
-    gitHubLink: "https://github.com/88dennis/sarmsdev-staff-tracker",
-    projectInfo: "MERN staff info tracker form using semantics ui and crud operations",
-    projectLink: "https://sarmsdev-staff-tracker.herokuapp.com/",
-  },
-  {
-    _id: 90,
-    name: "Tannin",
-    image: "https://i.imgur.com/gId2KuI.png",
-    gitimage: "https://i.imgur.com/5uRJvFm.png",
-    gitHubLink: "https://github.com/88dennis/tannin-app-final",
-    projectInfo: "Tannin is a react app designed to help restaurant management educate and test their staff on wine knowledge for their current wine list. Wine is a detailed and nuanced subject that requires attention and practice to learn. Restaurants are a fast paced, hectic work environment that require a lot of quick thinking and physical labor. Tannin is designed to make studying wine as easy as possible for employees and just as easy for management to track.",
-    projectLink: "https://tanninwineapp.herokuapp.com/"
+  // },
+  // {
+  //   _id: 80,
+  //   name: "Staff Info Tracker",
+  //   image: "https://i.imgur.com/KFpCAN7.jpg",
+  //   gitimage: "https://i.imgur.com/5uRJvFm.png",
+  //   gitHubLink: "https://github.com/88dennis/sarmsdev-staff-tracker",
+  //   projectInfo: "MERN staff info tracker form using semantics ui and crud operations",
+  //   projectLink: "https://sarmsdev-staff-tracker.herokuapp.com/",
+  // },
+  // {
+  //   _id: 90,
+  //   name: "Tannin",
+  //   image: "https://i.imgur.com/gId2KuI.png",
+  //   gitimage: "https://i.imgur.com/5uRJvFm.png",
+  //   gitHubLink: "https://github.com/88dennis/tannin-app-final",
+  //   projectInfo: "Tannin is a react app designed to help restaurant management educate and test their staff on wine knowledge for their current wine list. Wine is a detailed and nuanced subject that requires attention and practice to learn. Restaurants are a fast paced, hectic work environment that require a lot of quick thinking and physical labor. Tannin is designed to make studying wine as easy as possible for employees and just as easy for management to track.",
+  //   projectLink: "https://tanninwineapp.herokuapp.com/"
     
-  },
+  // },
   {
     _id: 92,
     name: "Pet Sessions",
@@ -236,34 +236,34 @@ projects:[
         projectLink: "https://88dennis.github.io/live-search-pagination/"
       },
       
-      {
-        _id: 190,
-        name: "Posting Template - MERN",
-        image: "",
-        gitimage: "https://i.imgur.com/5uRJvFm.png",
-        gitHubLink: "https://github.com/88dennis/mern-post-app",
-        projectInfo: "Mern template for posting something",
-        projectLink: "https://mernpostapp2.herokuapp.com/",
-      },
-      {
-        _id: 200,
-        name: "Login Template - MERN",
-        image: "",
-        gitimage: "https://i.imgur.com/5uRJvFm.png",
-        gitHubLink: "https://github.com/88dennis/sarmsdev-logineasy",
-        projectInfo: "MERN login form using material design and crud operations",
-        projectLink: "https://sarmsdev-login-easy.herokuapp.com/",
-      },
+      // {
+      //   _id: 190,
+      //   name: "Posting Template - MERN",
+      //   image: "",
+      //   gitimage: "https://i.imgur.com/5uRJvFm.png",
+      //   gitHubLink: "https://github.com/88dennis/mern-post-app",
+      //   projectInfo: "Mern template for posting something",
+      //   projectLink: "https://mernpostapp2.herokuapp.com/",
+      // },
+      // {
+      //   _id: 200,
+      //   name: "Login Template - MERN",
+      //   image: "",
+      //   gitimage: "https://i.imgur.com/5uRJvFm.png",
+      //   gitHubLink: "https://github.com/88dennis/sarmsdev-logineasy",
+      //   projectInfo: "MERN login form using material design and crud operations",
+      //   projectLink: "https://sarmsdev-login-easy.herokuapp.com/",
+      // },
      
-      {
-        _id: 210,
-        name: "Activity Tracker with Passport uth",
-        image: "",
-        gitimage: "https://i.imgur.com/5uRJvFm.png",
-        gitHubLink: "https://github.com/88dennis/sarmsdevmernauth",
-        projectInfo: "MERN template for activity tracking, blog post. Uses passport for auth login and signup. With basic crud operations. Lets you add members and input their activities",
-        projectLink: " https://sarmsdevmernauth.herokuapp.com/",
-      },
+      // {
+      //   _id: 210,
+      //   name: "Activity Tracker with Passport uth",
+      //   image: "",
+      //   gitimage: "https://i.imgur.com/5uRJvFm.png",
+      //   gitHubLink: "https://github.com/88dennis/sarmsdevmernauth",
+      //   projectInfo: "MERN template for activity tracking, blog post. Uses passport for auth login and signup. With basic crud operations. Lets you add members and input their activities",
+      //   projectLink: " https://sarmsdevmernauth.herokuapp.com/",
+      // },
     ]
 
 };
