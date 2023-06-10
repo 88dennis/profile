@@ -1,0 +1,33 @@
+/* .notnow :hover {
+    background-color: gray;
+} */
+
+
+/* .xBtn {
+    font-size: 25px;
+    font-style: italic;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-out;
+}
+
+.xBtn.show {
+    transform: translateX(0);
+} */
+
+.xBtn {
+    /* height: 30px; */
+    font-size: 25px;
+    font-style: italic;
+    /* opacity: 0.2; */
+    transform: translateX(100%);
+    transition: transform 0.5s ease-out;
+    /* opacity: 0.8; */
+}
+
+.xBtn.show {
+    /* opacity: 0.8; */
+    /* transition: opacity 2s ease-out; */
+    /* -moz-transition: opacity 2s ease-out; */
+    /* -webkit-transition: opacity 2s ease-out; */
+    transform: translateX(0);
+}

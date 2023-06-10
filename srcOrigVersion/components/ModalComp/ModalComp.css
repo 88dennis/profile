@@ -1,0 +1,84 @@
+/* .modal {
+    width: 75%;
+    background: rgb(231, 218, 218);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+    position: fixed;
+    top: 20vh;
+    left: 11%;
+    z-index: 200;
+};
+
+.modalHeader {
+    padding: 2rem;
+    background: rgba(0,0,0,0.75);
+    border-style: solid;
+    font-size: 1.25rem;
+    height: 30px;
+}
+
+.modalButtons {
+    height: 30px;
+    border-radius: 10%;
+    margin: 0.25rem;
+    background-color: steelblue;
+    color: white;
+    outline: none;
+}
+
+.modalButtons:hover,
+.modalButtons:focus{
+    color: steelblue;
+    background-color: white;
+}
+
+.modalHeader h1 {
+    margin: 0;
+    background: rgba(0,0,0,0.75);
+    padding: 1rem;
+    color: white;
+}
+
+.modal_content {
+    padding: 1rem;
+    overflow: auto;
+    height: 130px;
+}
+.modal_actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .modal {
+        width: 30rem;
+        left: calc((100% - 30rem)/2 );
+    }
+}
+
+ */
+
+.modal_container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.modal_button {
+    min-width:100px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    background: #141414;
+    cursor:pointer;
+color:white;
+}
+
+
+.modalButtons,
+.iconsimg,
+.buttonLinksbtn
+{
+z-index:400;
+}

@@ -1,0 +1,22 @@
+.my_card_border_contact.card {
+    border-radius: 20px;
+    /* max-width: 70%; */
+}
+/* 
+.contact_heading {
+    font-size: .6rem;
+    color: white;
+} */
+
+
+@media (max-width: 768px) {
+    
+    .about_me_div_contact {
+    font-size: 0.6rem;
+    }
+ 
+        
+    .contact_heading   {
+        font-size: 12px !important;;
+    }
+      }
