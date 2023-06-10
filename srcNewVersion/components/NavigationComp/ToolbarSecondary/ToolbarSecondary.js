@@ -1,23 +1,35 @@
 import React, { useEffect, useState } from "react";
 import {Link } from "react-router-dom";
-import "./Toolbar.css";
+import "./ToolbarSecondary.css";
 import DrawerToggle from "../SideDrawer/DrawerToggle";
 
 let isMounted = false;
-const Toolbar = (props) => {
+const ToolbarSecondary = (props) => {
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const [mount, setMount] = useState(false);
 
-  const styleVisible = {
+  let styleVisible = {
+    top: "60px",
+    transition: "all .3s ease",
+  };
+
+  let styleNotVisible = {
     top: "0",
     transition: "all .3s ease",
   };
 
-  const styleNotVisible = {
-    top: "-120px",
-    transition: "all .3s ease",
-  };
+  let drawerShow = {
+    // visibility:"visible",
+    display:"flex"
+
+  }
+
+  let drawerHidden = {
+    // visibility:"hidden",
+    display:"none"
+
+  }
 
   useEffect(() => {
     function onScroll(e) {
@@ -46,6 +58,8 @@ const Toolbar = (props) => {
   function isScrolling() {
     if (scrolling && scrollTop > 30) {
       // setShowNav(false);
+      // setShowBurger(true);
+      console.log(props.nameOfPage, "******** NAME OF PAGE")
       return true;
     } else {
       // setShowNav(true);
@@ -57,13 +71,17 @@ const Toolbar = (props) => {
   let aboutLinkText = "About";
   let contactLinkText = "Contact";
   let portfolioLinkText = "Portfolio";
-
+  function goToLoc(){
+    document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
+  }
   return (
     <header
       style={isScrolling() ? styleNotVisible : styleVisible}
-      className="toolbar"
+      className="toolbar_secondary"
     >
       <nav className="toolbar_navigation">
+        <button onClick={()=>goToLoc()}>GOTO</button>
+      <div style={isScrolling() ? drawerShow : drawerHidden}>
         <div className="toolbar_navigation2">
           <div className="toolbar_logo">
             {/* <div className="toolbar_btns">{props.children}</div> */}
@@ -121,13 +139,17 @@ const Toolbar = (props) => {
           </div>
         </div>
         {/* <div className="spacer"></div> */}
+      </div>
 
-        <div>
+
+        <div style={isScrolling() ? drawerShow : drawerHidden}>
           <DrawerToggle click={props.toggleDrawer}></DrawerToggle>
         </div>
+
+
       </nav>
     </header>
   );
 };
 
-export default Toolbar;
+export default ToolbarSecondary;

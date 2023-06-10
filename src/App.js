@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import { Routes, Route, Switch } from "react-router-dom";
+
 import {GlobalContextProvider} from './context/GlobalState';
 // import { GlobalContext } from './context/GlobalState';
 // import { useContext } from 'react';
@@ -20,6 +22,7 @@ function App() {
     <div className="App">
      <GlobalContextProvider>
       {/* <Router basename={process.env.PUBLIC_URL}> */}
+      
       <Router basename={"/profile"}> 
         <Switch>
         <Route exact path="/" component={LandingPage} />

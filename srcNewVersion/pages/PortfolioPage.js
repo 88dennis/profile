@@ -3,6 +3,10 @@ import { GlobalContext } from "../context/GlobalState";
 
 import LayoutSnapComp from "../components/LayoutSnapComp/LayoutSnapComp";
 import NavigationComp from "../components/NavigationComp/NavigationComp";
+import NavigationCompSecondary from "../components/NavigationComp/NavigationCompSecondary";
+
+// import NavigationCompSecondary from "../components/NavigationCompSecondary/NavigationCompSecondary";
+
 import { useLocation } from "react-router-dom";
 
 let isMounted = false;
@@ -33,6 +37,10 @@ const PortfolioPage = () => {
   return (
     <>
       <NavigationComp />
+
+      <NavigationCompSecondary />
+
+      
 
       <LayoutSnapComp />
     </>

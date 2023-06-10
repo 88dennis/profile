@@ -95,7 +95,7 @@ const ProjectsComp = ({ sectionName, projectData, projectBtnHandler }) => {
   }, [mount, projectData]);
 
   const showAnchorLink = (projectItem, index) => {
-    console.log(projectItem, "ANCHORLINK")
+    // console.log(projectItem, "ANCHORLINK")
     return (
       <a
         href={projectItem.projectLink}
@@ -131,7 +131,7 @@ const ProjectsComp = ({ sectionName, projectData, projectBtnHandler }) => {
   };
 
   const showLinkReact = (projectItems, projectItem, index) => {
-    console.log(projectItem, "LINKREACT")
+    // console.log(projectItem, "LINKREACT")
 
     return (
       <Link
@@ -169,7 +169,9 @@ const ProjectsComp = ({ sectionName, projectData, projectBtnHandler }) => {
   const noProjectItems =
     !projectItems || (projectItems && projectItems.length === 0);
   return (
+    
     <div className="container">
+      {/* {console.log(projectItems)} */}
       <h4 className="p-2">{sectionName}</h4>
       <div className="row">
         {!noProjectItems &&

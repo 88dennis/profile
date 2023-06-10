@@ -121,3 +121,38 @@ https://youtu.be/Q9n2mLqXFpU
 
 ===============
 
+OBJECT DATA WITH ARRAY ITERATION
+{Object.keys(projectItems).map((oneKey,i)=>{
+        console.log(oneKey);
+        projectItems[oneKey].map((projItem, index)=>{
+          console.log(projItem);
+        })
+     })} 
+
+OR TO RENDER
+
+ <br></br>
+    <br></br>
+
+    <br></br>
+
+    
+{!noProjectItems &&
+        Object.keys(projectItems).map((oneKey,i)=>{
+
+        return(
+<>
+<li>
+{oneKey}
+</li>
+{   projectItems[oneKey].map((projItem, index)=>{
+          return (<>
+          {projItem.name}
+          </>)
+        })}
+</>
+        )
+    
+      
+      })
+      }
